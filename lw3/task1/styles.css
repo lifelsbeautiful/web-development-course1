@@ -15,3 +15,31 @@ body {
   width: 1100px;
   margin: 60px auto;
 }
+.meaning {
+  display: flex;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.description {
+  margin-left: 220px;
+
+}
+.size {
+  margin-left: 220px;
+
+}
+.quantily{
+  margin-left: 50px;
+}
+.remove{
+  margin-left: 150px;
+}
+.price{
+  margin-left: 50px;
+}
+.one-line {
+  background-color: rgb(234, 234, 234); /* Цвет линии */
+  height: 3px;
+  width: 900px;
+  margin: 30px auto;
+}
