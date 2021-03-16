@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+.header-text {
+  color: rgb(3, 12, 55);
+  text-align: center;
+  margin-top: 60px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.content {
+  background-color: white;
+  border: 1px solid rgb(234, 234, 234);
+  height: 600px;
+  width: 1100px;
+  margin: 60px auto;
+}
