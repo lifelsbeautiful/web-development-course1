@@ -61,5 +61,15 @@ body {
   margin: 50px 0 0 20px;
 }
 .code-product {
-  margin-left: 20px;
+  margin: 5px 0 0 20px;
+}
+.size-product {
+  height: 55px;
+  width: 55px;
+  border: 1px solid rgb(234, 234, 234);
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 45px 0 0 60px;
 }
