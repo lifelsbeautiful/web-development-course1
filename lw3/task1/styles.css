@@ -43,3 +43,23 @@ body {
   width: 900px;
   margin: 30px auto;
 }
+.shtan {
+  height: 120px;
+  width: 120px;
+  margin: 20px 0 0 100px;
+}
+.first-product {
+  display: flex;
+}
+.name-code{
+  display: flex;
+  flex-direction: column;
+}
+.name-shtan {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 50px 0 0 20px;
+}
+.code-product {
+  margin-left: 20px;
+}
