@@ -73,3 +73,35 @@ body {
   font-weight: bold;
   margin: 45px 0 0 60px;
 }
+.plus-btn {
+  height: 59px;
+  width: 59px;
+  border: 1px solid rgb(234, 234, 234);
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  margin: 45px 0 0 45px;
+  background-color: rgb(3, 12, 55);
+  color: white;
+  outline: none;
+}
+.num-goods {
+  height: 55px;
+  width: 55px;
+  border: 1px solid rgb(234, 234, 234);
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  margin: 45px -5px;
+  outline: none;
+}
+.minus-btn {
+  height: 59px;
+  width: 59px;
+  border: 1px solid rgb(234, 234, 234);
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  margin-top: 45px;
+  outline: none;
+}
