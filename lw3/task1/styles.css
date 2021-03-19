@@ -231,7 +231,7 @@ body {
 .basket-img {
   height: 25px;
   width: 25px;
-  margin-top: 13px;
+  margin: 43px 0 0 -45px;
 }
 .btn-footer {
   display: flex;
