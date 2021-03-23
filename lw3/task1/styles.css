@@ -45,7 +45,7 @@ body {
   width: 1100px;
   margin: 20px auto;
 }
-.shtan {
+.product {
   height: 120px;
   width: 120px;
   margin: 20px 0 0 100px;
@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.name-shtan {
+.name-product {
   font-weight: bold;
   font-size: 25px;
   margin: 50px 0 0 20px;
