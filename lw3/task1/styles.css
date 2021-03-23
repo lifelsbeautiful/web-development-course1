@@ -39,7 +39,7 @@ body {
 .price{
   margin-left: 70px;
 }
-.one-line {
+.grey-line {
   background-color: rgb(234, 234, 234); /* Цвет линии */
   height: 3px;
   width: 1100px;
