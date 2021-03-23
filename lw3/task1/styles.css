@@ -21,23 +21,28 @@ body {
   margin-top: 50px;
   font-size: 18px;
   font-weight: bold;
+  flex-wrap: wrap;
 }
 .description {
-  margin-left: 220px;
+  width: 350px;
+  text-align: right;
 
 }
 .size {
-  margin-left: 270px;
-
+  width: 275px;
+  text-align: right;
 }
 .quantily{
-  margin-left: 70px;
+  width: 200px;
+  text-align: right;
 }
 .remove{
-  margin-left: 170px;
+  width: 175px;
+  text-align: right;
 }
 .price{
-  margin-left: 70px;
+  width: 120px;
+  text-align: right;
 }
 .grey-line {
   background-color: rgb(234, 234, 234); /* Цвет линии */
