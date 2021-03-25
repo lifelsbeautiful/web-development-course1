@@ -1,4 +1,4 @@
-var MusicPlayer = {
+var Player = {
   trackList: [
     'song1.mp3',
     'song2.mp3',
@@ -11,11 +11,9 @@ var MusicPlayer = {
   },
   play: function () {
     this.status = 'play';
-    console.log('Play');
   },
   pause: function () {
     this.status = 'pause';
-    console.log('Pause');
   },
   next: function () {
     this.currentTrack 1 >= this.trackList.length + 1;

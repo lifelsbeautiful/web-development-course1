@@ -1,9 +1,13 @@
 function isTimeRangesIntersect(timedistance1, timedistance2) {
   if (Array.isArray(timedistance1) && Array.isArray(timedistance2)) {
-    let answer = timedistance1[1] >= timedistance2[0];
-    return answer;
+    if (timedistance1[0] < timedistance2[0] && timedistance1[1] < timedistance2[0] ||
+      timedistance1[0] > timedistance2[0] && timedistance2[1] < timedistance1[0]) {
+      return false;
+    } else {
+      return true;
+    }
   } else {
-    return false || console.log('Введите массивы');
+    return false;
   }
 }
 isTimeRangesIntersect(['08:30', '09:30'], ['10:30', '12:00']); // return false
