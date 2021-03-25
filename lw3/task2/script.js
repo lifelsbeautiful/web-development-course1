@@ -3,7 +3,7 @@ function isTimeRangesIntersect(timedistance1, timedistance2) {
     let answer = timedistance1[1] >= timedistance2[0];
     return answer;
   } else {
-    return false & console.log('Введите массивы');
+    return false || console.log('Введите массивы');
   }
 }
 isTimeRangesIntersect(['08:30', '09:30'], ['10:30', '12:00']); // return false
