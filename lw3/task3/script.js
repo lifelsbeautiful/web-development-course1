@@ -31,8 +31,6 @@ var MusicPlayer = {
   Player.display(); // "Track: song1.mp3, Status: pause"
   Player.play();
   Player.display(); // "Track: song1.mp3, Status: play"
-
   Player.next(); // переключает другой трек
   Player.display(); // "Track: song2.mp3, Status: play"
-
   Player.showTracks(); // вывести в консоль список доступных треков
