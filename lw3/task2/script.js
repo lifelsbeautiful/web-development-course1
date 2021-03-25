@@ -1,17 +1,10 @@
-function isTimeRangesIntersect(arr1, arr2) {
-  let result = [];
-
-  for (let elem of arr1) {
-    if (inArray(elem, arr2)) {
-      result.push(elem);
-    }
+function isTimeRangesIntersect(timedistance1, timedistance2) {
+  if (Array.isArray(timedistance1) && Array.isArray(timedistance2)) {
+    let answer = timedistance1[1] >= timedistance2[0];
+    return answer;
+  } else {
+    return false & console.log('Введите массивы');
   }
-
-  return result;
-}
-
-function inArray(elem, arr) {
-  return arr.indexOf(elem) !== -1;
 }
 isTimeRangesIntersect(['08:30', '09:30'], ['10:30', '12:00']); // return false
 isTimeRangesIntersect(['18:30', '19:30'], ['19:00', '21:00']); // return true
