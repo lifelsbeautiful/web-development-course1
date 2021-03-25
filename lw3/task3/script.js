@@ -4,7 +4,7 @@ var Player = {
     'song2.mp3',
     'song3.mp3',
   ],
-  currentTrack: 'song1.mp3',
+  currentTrack: 0,
   status: 'pause',
   display: function () {
     return 'Track: ' + this.currentTrack + ' Status: ' + this.status;
@@ -16,19 +16,28 @@ var Player = {
     this.status = 'pause';
   },
   next: function () {
-    this.currentTrack 1 >= this.trackList.length + 1;
+    if (this.currentTrack < this.trackList.length - 1) {
+      this.currentTrack++;
+    } else {
+      this.currentTrack = 0;
+    }
   },
-  prev: function () {
-    this.currentTrack <= 0 this.trackList.length - 1;
-  },
-  showTracks: function () {
-    console.log(this.trackList);
-    console.log(this.currentTrack + ' - Сейчас звучит');
-  };
 
-  Player.display(); // "Track: song1.mp3, Status: pause"
-  Player.play();
-  Player.display(); // "Track: song1.mp3, Status: play"
-  Player.next(); // переключает другой трек
-  Player.display(); // "Track: song2.mp3, Status: play"
-  Player.showTracks(); // вывести в консоль список доступных треков
+  prev: function () {
+    if (this.currentTrack !== 0) {
+      this.currentTrack--;
+    } else {
+      this.currentTrack = this.trackList.length - 1;
+    }
+  },
+
+  showTracks: function () {
+    for (i = 0; i < this.trackList.length; i++) {
+      if (this.trackList[i] === this.currentTrack) {
+        console.log(`${i + 1}. ${this.trackList[i]}`);
+      } else {
+        console.log(`${i + 1}. ${this.trackList[i]}`);
+      }
+    }
+  },
+};
