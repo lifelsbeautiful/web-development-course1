@@ -21,6 +21,7 @@ var Player = {
     } else {
       this.currentTrack = 0;
     }
+    this.play()
   },
 
   prev: function () {
@@ -29,6 +30,7 @@ var Player = {
     } else {
       this.currentTrack = this.trackList.length - 1;
     }
+    this.play()
   },
 
   showTracks: function () {
