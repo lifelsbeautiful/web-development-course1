@@ -24,7 +24,33 @@
         .content-profile .content-profile-data_name-number
         .content-profile .content-profile-data_mail
         .content-profile .content-profile-data_sms--active
-        .content-profile .content-profile-data_save
+        .content-profile .content-profile-data_btn-save
     .content-customization
       .content-customization .my-xpay
+      .content-customization .my-xpay_name
+      .content-customization .my-xpay_search
+      .content-customization .my-xpay_btn-edit
+      .content-customization .my-xpay .first-string
+        .content-customization .my-xpay .first-string_text
+        .content-customization .my-xpay .first-string_btn--disable
+      .content-customization .my-xpay .second-string
+        .content-customization .my-xpay .second-string_text
+        .content-customization .my-xpay .second-string_btn-active
       .content-customization .my-bills
+      .content-customization .my-bills_name
+      .content-customization .my-bills_filter
+      .content-customization .my-bills .column
+        .content-customization .my-bills .column_phone-bill
+         .content-customization .my-bills .column_phone-bill_text
+         .content-customization .my-bills .column_phone-bill_btn--active
+        .content-customization .my-bills .column_internet-bill
+         .content-customization .my-bills .column_internet-bill_text
+         .content-customization .my-bills .column_internet-bill_btn--disable
+        .content-customization .my-bills .column_house
+         .content-customization .my-bills .column_house_text
+         .content-customization .my-bills .column_house_btn--active
+        .content-customization .my-bills .column_incame-tax
+         .content-customization .my-bills .column_incame-tax_text
+         .content-customization .my-bills .column_incame-tax_btn--active
+      
+
