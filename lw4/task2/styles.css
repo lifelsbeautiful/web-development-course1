@@ -50,21 +50,49 @@ body {
 .main-string {
   display: flex;
   margin: 20px 0 0 30px;
+  justify-content: space-between;
 }
-.main-string-checkbox-input {
+.main-string-checkbox {
+  display: flex;
+  align-items: center;
+}
+.main-string_checkbox-input {
  transform: scale(2);
- margin-top: 25px;
 }
-.main-string-checkbox-text {
-  margin-left: 30px;
+.main-string-checkbox_text {
+  margin-left: 22px;
   text-align: left;
 }
-.main-string-time {
-  font-size: 17px;
-  margin: 23px 0 0 100px;
-  align-items: center;
+.main-string_time {
+  font-size: 15px;
+  margin: 23px 20px;
 }
 p {
   color: #7e8eff;
   font-size: 20px;
+}
+.two {
+  margin-top: 120px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_tasks {
+  font-size: 20px;
+  margin-left: 22px;
+}
+.footer--add {
+  margin-right: 22px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #7e8eff;
+  font-weight: bold;
+}
+.main-string-checkbox_text--active {
+  text-decoration: line-through;
+  font-size: 20px;
+  margin-left: 20px;
+  opacity: 0.6;
 }
