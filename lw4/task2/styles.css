@@ -43,3 +43,28 @@ body {
   background-color: #eeeeee;
   margin-top: 30px;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main-string {
+  display: flex;
+  margin: 20px 0 0 30px;
+}
+.main-string-checkbox-input {
+ transform: scale(2);
+ margin-top: 25px;
+}
+.main-string-checkbox-text {
+  margin-left: 30px;
+  text-align: left;
+}
+.main-string-time {
+  font-size: 17px;
+  margin: 23px 0 0 100px;
+  align-items: center;
+}
+p {
+  color: #7e8eff;
+  font-size: 20px;
+}
