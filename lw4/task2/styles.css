@@ -1,0 +1,12 @@
+body {
+  background-color: #fcc4a2;
+}
+.content {
+  display: flex;
+}
+.block {
+  height: 700px;
+  width: 500px;
+  background-color: white;
+  margin: 100px 0 0 110px;
+}
