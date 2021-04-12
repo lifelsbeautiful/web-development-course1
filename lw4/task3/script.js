@@ -1,6 +1,6 @@
-var arr = ["Яблоко", "Апельсин", "Груша"];
-
-arr.forEachRight(function (arr) {
-  arr.reverse();
-  alert(arr);
-});
+Array.prototype.forEachRight = function (EachRight) {
+  var array = this;
+  for (var i = array.length - 1; i >= 0; i--) {
+    EachRight(array[i], i, array);
+  }
+};
