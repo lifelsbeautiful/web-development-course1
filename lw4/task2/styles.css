@@ -13,26 +13,26 @@
   display: flex;
   flex-direction: column;
 }
-.header {
+.date-header {
   display: flex;
   color: #7e8eff;
   font-size: 25px;
   font-weight: bold;
   margin-top: 30px;
 }
-.header-prev a {
+.date-header-prev a {
   text-decoration: none;
   color: #7e8eff;
   font-weight: bold;
   margin: 0 90px 0 10px;
 }
-.header-next a {
+.date-header-next a {
   text-decoration: none;
   color: #7e8eff;
   font-weight: bold;
   margin-left: 90px;
 }
-.header-march {
+.date-header-march {
   font-family: Arial;
   font-weight: lighter;
   font-size: 20px;
