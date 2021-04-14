@@ -5,7 +5,7 @@
 .content {
   display: flex;
 }
-.todo-list {
+.date {
   height: 700px;
   width: 500px;
   background-color: white;
@@ -43,28 +43,28 @@
   background-color: #eeeeee;
   margin-top: 30px;
 }
-.main {
+.todo-list {
   display: flex;
   flex-direction: column;
 }
-.main-string {
+.todo-list-item {
   display: flex;
   margin: 20px 0 0 30px;
   justify-content: space-between;
 }
-.main-string-checkbox {
+.todo-list-item-checkbox {
   display: flex;
   align-items: center;
 }
-.main-string_checkbox-input {
+.todo-list-item_checkbox-input {
  transform: scale(2);
 }
-.main-string-checkbox_text {
+.todo-list-item-checkbox_text {
   margin-left: 22px;
   text-align: left;
   color: #7e8eff;
 }
-.main-string_time {
+.todo-list-item_time {
   font-size: 15px;
   margin: 23px 20px;
   color: #7e8eff;
@@ -89,7 +89,7 @@
   color: #7e8eff;
   font-weight: bold;
 }
-.main-string-checkbox_text--active {
+.todo-list-item-checkbox_text--active {
   text-decoration: line-through;
   font-size: 20px;
   margin-left: 20px;
