@@ -44,6 +44,21 @@ window.onload = function () {
     updateUI();
   }
 
+  function addToListingElements(element) {
+    var elementPosition = storeElements.indexOf(element);
+    if (elementPosition > -1) {
+      listingElements.push(element);
+      storeElements.splice(elementPosition, 1);
+    }
+  }
+
+  var addButton = document.querySelector('#add-btn');
+  addButton.onclick = function () {
+    var selectedOption = document.querySelector('.store-select option:checked');
+    addToListingElements(selectedOption.innerText);
+    updateUI();
+  }
+
   // запускаем начальное обновление интерфейса
   // для первоначального вывода данных из состояния в UI
   updateUI();
