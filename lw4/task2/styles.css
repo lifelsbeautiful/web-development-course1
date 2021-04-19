@@ -56,7 +56,7 @@
   display: flex;
   align-items: center;
 }
-.todo-list-item__checkbox-input {
+.todo-list-item__checkbox {
  transform: scale(2);
 }
 .todo-list-item-checkbox__text {
