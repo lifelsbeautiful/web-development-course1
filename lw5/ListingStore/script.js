@@ -20,7 +20,6 @@ window.onload = function () {
     var listingSelect = document.querySelector('.listing-select');
     storeSelect.innerHTML = '';
     listingSelect.innerHTML = '';
-
     // вставка элементов из Listing
     for (var i = 0; i < listingElements.length; i++) {
       var newOption = document.createElement('option');
@@ -79,7 +78,14 @@ window.onload = function () {
     }
     updateUI();
   }
-
+  var addButton = document.querySelector('#add-new-btn');
+  addButton.onclick = function () {
+    var newPrompt = prompt("Введите название фрукта");
+    if (newPrompt != null) {
+      listingElements.push(newPrompt)
+      updateUI();
+    }
+  }
   // запускаем начальное обновление интерфейса
   // для первоначального вывода данных из состояния в UI
   updateUI();
