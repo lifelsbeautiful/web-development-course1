@@ -40,7 +40,8 @@ window.onload = function () {
   var addButton = document.querySelector('#add-button');
   addButton.onclick = function () {
     var selectedOption = document.querySelector('.listing-select option:checked');
-    addToStoreElements(selectedOption.innerText);
+    if (selectedOption != null)
+      addToStoreElements(selectedOption.innerText);
     updateUI();
   }
 
@@ -51,11 +52,31 @@ window.onload = function () {
       storeElements.splice(elementPosition, 1);
     }
   }
-
+  // событие для кнопки "Add to listing"
   var addButton = document.querySelector('#add-btn');
   addButton.onclick = function () {
     var selectedOption = document.querySelector('.store-select option:checked');
-    addToListingElements(selectedOption.innerText);
+    if (selectedOption != null)
+      addToListingElements(selectedOption.innerText);
+    updateUI();
+  }
+  function deleteTOElements(element) {
+    if (storeElements.indexOf(element) != -1) {
+      storeElements.splice(storeElements.indexOf(element), 1)
+    } if (listingElements.indexOf(element) != -1) {
+      listingElements.splice(listingElements.indexOf(element), 1)
+    }
+  }
+  var addButton = document.querySelector('#delete-btn');
+  addButton.onclick = function () {
+    var selectedOptionListing = document.querySelector('.listing-select option:checked');
+    var selectedOptionStore = document.querySelector('.store-select option:checked');
+    if (selectedOptionStore != null) {
+      deleteTOElements(selectedOptionStore.innerText);
+    }
+    if (selectedOptionListing != null) {
+      deleteTOElements(selectedOptionListing.innerText);
+    }
     updateUI();
   }
 
