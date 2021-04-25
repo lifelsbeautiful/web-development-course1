@@ -18,18 +18,22 @@ window.onload = function () {
   function updateUI() {
     var storeSelect = document.querySelector('.store-select');
     var listingSelect = document.querySelector('.listing-select');
+    var numOfStore = document.querySelector('#store-num');
+    var numOfListing = document.querySelector('#listing-num');
+    var storeLength = storeElements.length;
+    var listingLength = listingElements.length;
+    numOfStore.innerHTML = `${storeLength}`;
+    numOfListing.innerHTML = `${listingLength}`;
     storeSelect.innerHTML = '';
     listingSelect.innerHTML = '';
+
     // вставка элементов из Listing
     for (var i = 0; i < listingElements.length; i++) {
       var newOption = document.createElement('option');
       newOption.innerText = listingElements[i];
       listingSelect.append(newOption);
-      function toggleCompleteTodo(todoId, checked) {
-        const todo = todos.find((todo) => todo.id === todoId);
-        todo.completed = checked;
-      }
     }
+
 
     // вставка элементов из Store
     for (var i = 0; i < storeElements.length; i++) {
