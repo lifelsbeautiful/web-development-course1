@@ -87,11 +87,14 @@ window.onload = function () {
   var addButton = document.querySelector('#add-new-btn');
   addButton.onclick = function () {
     var newPrompt = prompt("Введите название фрукта");
-    if (newPrompt !== null) {
-      listingElements.push(newPrompt)
+    if (addElement(newPrompt) !== null) {
       updateUI();
     }
   }
+  function addElement(newPrompt) {
+    listingElements.push(newPrompt)
+  }
+
   // запускаем начальное обновление интерфейса
   // для первоначального вывода данных из состояния в UI
   updateUI();
