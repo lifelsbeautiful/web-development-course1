@@ -43,7 +43,7 @@ window.onload = function () {
   var addButton = document.querySelector('#add-button');
   addButton.onclick = function () {
     var selectedOption = document.querySelector('.listing-select option:checked');
-    if (selectedOption != null)
+    if (selectedOption !== null)
       addToStoreElements(selectedOption.innerText);
     updateUI();
   }
@@ -59,15 +59,15 @@ window.onload = function () {
   var addButton = document.querySelector('#add-btn');
   addButton.onclick = function () {
     var selectedOption = document.querySelector('.store-select option:checked');
-    if (selectedOption != null)
+    if (selectedOption !== null)
       addToListingElements(selectedOption.innerText);
     updateUI();
   }
   // событие для кнопки "Delete element"
   function deleteElement(element) {
-    if (storeElements.indexOf(element) != -1) {
+    if (storeElements.indexOf(element) !== -1) {
       storeElements.splice(storeElements.indexOf(element), 1)
-    } if (listingElements.indexOf(element) != -1) {
+    } if (listingElements.indexOf(element) !== -1) {
       listingElements.splice(listingElements.indexOf(element), 1)
     }
   }
@@ -75,10 +75,10 @@ window.onload = function () {
   addButton.onclick = function () {
     var selectedOptionListing = document.querySelector('.listing-select option:checked');
     var selectedOptionStore = document.querySelector('.store-select option:checked');
-    if (selectedOptionStore != null) {
+    if (selectedOptionStore !== null) {
       deleteElement(selectedOptionStore.innerText);
     }
-    if (selectedOptionListing != null) {
+    if (selectedOptionListing !== null) {
       deleteElement(selectedOptionListing.innerText);
     }
     updateUI();
@@ -87,7 +87,7 @@ window.onload = function () {
   var addButton = document.querySelector('#add-new-btn');
   addButton.onclick = function () {
     var newPrompt = prompt("Введите название фрукта");
-    if (newPrompt != null) {
+    if (newPrompt !== null) {
       listingElements.push(newPrompt)
       updateUI();
     }
