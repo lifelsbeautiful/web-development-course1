@@ -25,6 +25,10 @@ window.onload = function () {
       var newOption = document.createElement('option');
       newOption.innerText = listingElements[i];
       listingSelect.append(newOption);
+      function toggleCompleteTodo(todoId, checked) {
+        const todo = todos.find((todo) => todo.id === todoId);
+        todo.completed = checked;
+      }
     }
 
     // вставка элементов из Store
@@ -59,7 +63,8 @@ window.onload = function () {
       addToListingElements(selectedOption.innerText);
     updateUI();
   }
-  function deleteTOElements(element) {
+  // событие для кнопки "Delete element"
+  function deleteElement(element) {
     if (storeElements.indexOf(element) != -1) {
       storeElements.splice(storeElements.indexOf(element), 1)
     } if (listingElements.indexOf(element) != -1) {
@@ -71,13 +76,14 @@ window.onload = function () {
     var selectedOptionListing = document.querySelector('.listing-select option:checked');
     var selectedOptionStore = document.querySelector('.store-select option:checked');
     if (selectedOptionStore != null) {
-      deleteTOElements(selectedOptionStore.innerText);
+      deleteElement(selectedOptionStore.innerText);
     }
     if (selectedOptionListing != null) {
-      deleteTOElements(selectedOptionListing.innerText);
+      deleteElement(selectedOptionListing.innerText);
     }
     updateUI();
   }
+  // событие для кнопки "Add new element"
   var addButton = document.querySelector('#add-new-btn');
   addButton.onclick = function () {
     var newPrompt = prompt("Введите название фрукта");
