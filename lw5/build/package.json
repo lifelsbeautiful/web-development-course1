@@ -1,7 +1,6 @@
 {
   "name": "build",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "minify-js": "minifyjs listing-store.js ",
@@ -16,5 +15,6 @@
   },
   "dependencies": {
     "copyfiles": "^2.4.1"
-  }
+  },
+  "description": ""
 }
