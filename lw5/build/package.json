@@ -5,7 +5,8 @@
   "scripts": {
     "minify-js": "minifyjs listing-store.js ",
     "minify-css": "minifycss listing-store.css ",
-    "copy-html": "copyfiles index.html "
+    "copy-html": "copyfiles index.html ",
+    "build": "npm-run-all minify-js minify-css copy-html "
   },
   "author": "",
   "license": "ISC",
