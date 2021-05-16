@@ -5,13 +5,18 @@
   "scripts": {
     "start": "parcel index.html --open",
     "minify-js": "minifyjs todo-app.min.js ",
+    "mini-css-extract-plugin": "minicss todo-app.min.css ",
     "build": "parcel build index.html minify-js"
   },
   "dependencies": {
     "minify": "^7.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.2.0"
+    "@babel/core": "7.2.0",
+    "css-loader": "^5.2.4",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss": "^8.2.15",
+    "postcss-loader": "^5.3.0"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
