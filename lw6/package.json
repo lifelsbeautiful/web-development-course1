@@ -4,14 +4,20 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "minify-js": "minifyjs listing-store.js ",
+    "build": "parcel build index.html minify-js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "minify": "^7.0.2"
+  },
   "devDependencies": {
     "@babel/core": "7.2.0"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
   },
-  "keywords": ["javascript", "starter"]
+  "keywords": [
+    "javascript",
+    "starter"
+  ]
 }
