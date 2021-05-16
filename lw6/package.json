@@ -4,7 +4,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "minify-js": "minifyjs listing-store.js ",
+    "minify-js": "minifyjs todo-app.min.js ",
     "build": "parcel build index.html minify-js"
   },
   "dependencies": {
