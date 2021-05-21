@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "minify-js": "minifyjs todo-app.min.js ",
-    "mini-css-extract-plugin": "minicss todo-app.min.css ",
-    "build": "parcel build index.html minify-js"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "minify": "^7.0.2"
