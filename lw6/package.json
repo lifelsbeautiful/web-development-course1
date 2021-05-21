@@ -24,6 +24,7 @@
   },
   "keywords": [
     "javascript",
-    "starter"
+    "starter",
+    "webpack"
   ]
 }
