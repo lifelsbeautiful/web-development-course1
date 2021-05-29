@@ -25,7 +25,15 @@ module.exports = {
             }
           }
         }]
-      }]
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: { compact: true },
+        exclude: '/node_modules/'
+      }
+
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
