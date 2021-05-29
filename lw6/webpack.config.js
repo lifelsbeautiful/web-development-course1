@@ -38,7 +38,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'todo-app.css'
+      filename: './build/todo-app.min.css'
     }),
   ],
   entry: 'index.js',
@@ -46,5 +46,6 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'index_bundle.js',
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: new HtmlWebpackPlugin({ template: 'index.html' }),
+
 }
