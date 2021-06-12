@@ -1,6 +1,6 @@
 // todo-app - точка входа в приложение
 // регистрируем события
-
+import './todo-app.css';
 import { addTodo, todos, toggleCompleteTodo } from "./todo-state";
 import { updateTodoList, updateTodoStatCompleted } from "./todo-update";
 
