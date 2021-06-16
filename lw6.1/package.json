@@ -4,7 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
     "cssnano": "^5.0.5",
+    "jest": "^27.0.4",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "postcss": "^8.3.0",
